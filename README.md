@@ -17,32 +17,11 @@ A **feature-rich**, backend-intensive microservice platform to manage **Jobs**, 
 - **Centralized Configuration**: Spring Cloud Config
 - **Service Discovery**: Eureka Registry & Spring Cloud Gateway
 - **Inter-Service Communication**: OpenFeign clients
-- **Monitoring**: Actuator endpoints + Prometheus integration
+- **Monitoring**: Actuator endpoints integration
 - **CI/CD**: GitHub Actions workflow for build/test/deploy
 - **Containerization**: Docker images + Docker Compose blueprint
-- **API Documentation**: Swagger UI for interactive endpoint exploration
 
 ## 📦 Microservices Architecture
-
-```text
-+--------------------+       +--------------------+
-|   API Gateway      |       |  Config Server     |
-| (Gateway + Swagger)|◄──────┤ (Centralized YAML) │
-+---------+----------+       +---------+----------+
-          |                            |
-          ▼                            ▼
-  +-------+-------+          +---------+---------+
-  |  jobms (8081) |          |   Eureka (8761)   |
-  +-------+-------+          +---------+---------+
-          |                            ▲
-          ▼                            |
-  +-------+-------+          +---------+---------+
-  |companyms (8082)|─────────►| reviewms (8083)   |
-  +-------+-------+          +-------------------+
-          ▲
-          │
-      (RabbitMQ)
-```
 
 ## 📋 API Endpoints
 
@@ -119,7 +98,6 @@ docker ps
 
 - **Swagger UI**: `http://localhost:8080/swagger-ui.html`
 - **Actuator Endpoints**: `/actuator/health`, `/actuator/metrics`
-- **Prometheus**: scrape metrics at `/actuator/prometheus`
 - **Zipkin UI**: `http://localhost:9411`
 
 ## 💡 Resilience & Circuit Breaking
@@ -141,7 +119,6 @@ When a review is created/updated, `reviewms` publishes an event to recalculate t
 ## 📈 CI/CD Pipeline
 
 - **GitHub Actions**: Build → Test → Docker Publish → Deploy
-- **Quality Checks**: Checkstyle, PMD, SpotBugs
 
 ## 🤝 Contributing
 
@@ -150,12 +127,4 @@ When a review is created/updated, `reviewms` publishes an event to recalculate t
 3. Commit: `git commit -m "Add XYZ feature"`
 4. Push: `git push origin feat/XYZ`
 5. Open a PR and request review
-
-## 📜 License
-
-Distributed under the MIT License. See [LICENSE](./LICENSE) for details.
-
----
-
-*This README was generated with ❤️ by your friendly neighborhood ChatGPT.*
 
