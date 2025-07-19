@@ -7,7 +7,7 @@
 ## 🌟 Overview
 
 A **feature-rich**, backend-intensive microservice platform to manage **Jobs**, **Companies**, and **Reviews** with real-time rating updates, distributed tracing, and resilient communication.
-- ![JobImage](docs/images/Job_Image.png)
+- ![JobImage](docs/images/Job_Img.png)
 
 ## 🚀 Key Features
 
