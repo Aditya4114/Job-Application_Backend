@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="53aa5200-5db3-457d-8d93-8b08f2504954" name="Changes" comment="Company Microservice">
+      <change afterPath="$PROJECT_DIR$/configserver/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/java/com/project/configserver/ConfigServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/application-docker.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configserver/src/test/java/com/project/configserver/ConfigServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/java/com/project/gateway/GatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application-docker.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway/src/test/java/com/project/gateway/GatewayApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/mysql-init/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/src/main/java/com/project/jobms/JobmsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/src/main/java/com/project/jobms/job/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/src/main/java/com/project/jobms/job/Job.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/src/main/java/com/project/jobms/job/JobController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/src/main/java/com/project/jobms/job/JobRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/src/main/java/com/project/jobms/job/JobService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/src/main/java/com/project/jobms/job/clients/CompanyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/src/main/java/com/project/jobms/job/clients/ReviewClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/src/main/java/com/project/jobms/job/dto/JobWithDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/src/main/java/com/project/jobms/job/external/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/src/main/java/com/project/jobms/job/external/Review.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/src/main/java/com/project/jobms/job/impl/JobServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/src/main/java/com/project/jobms/job/mapper/JobMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/src/main/resources/application-docker.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jobms/src/test/java/com/project/jobms/LobmsApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewms/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewms/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewms/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewms/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewms/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewms/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewms/src/main/java/com/project/reviewms/ReviewmsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewms/src/main/java/com/project/reviewms/reviews/Review.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewms/src/main/java/com/project/reviewms/reviews/ReviewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewms/src/main/java/com/project/reviewms/reviews/ReviewRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewms/src/main/java/com/project/reviewms/reviews/ReviewService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewms/src/main/java/com/project/reviewms/reviews/dto/ReviewMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewms/src/main/java/com/project/reviewms/reviews/impl/ReviewServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewms/src/main/java/com/project/reviewms/reviews/messaging/RabbitMQConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewms/src/main/java/com/project/reviewms/reviews/messaging/ReviewMessageProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewms/src/main/resources/application-docker.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewms/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reviewms/src/test/java/com/project/reviewms/ReviewmsApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-reg/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-reg/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-reg/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-reg/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-reg/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-reg/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-reg/src/main/java/com/project/service_reg/ServiceRegApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-reg/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-reg/src/test/java/com/project/service_reg/ServiceRegApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Aditya4114&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Aditya4114/Job-Application_Backend.git&quot;,
+    &quot;accountId&quot;: &quot;51e25247-1361-4b93-9c8a-2941f67de825&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="305qwp6w60rRxoWyPGNk8BW8YKP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.CompanymsApplication.executor": "Run",
+    "Spring Boot.ConfigServerApplication.executor": "Run",
+    "Spring Boot.GatewayApplication.executor": "Run",
+    "Spring Boot.JobmsApplication.executor": "Run",
+    "Spring Boot.ReviewmsApplication.executor": "Run",
+    "Spring Boot.ServiceRegApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/adity/Projects",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\adity\Projects" />
+      <recent name="C:\Users\adity\Projects\gateway" />
+      <recent name="C:\Users\adity\Projects\companyms" />
+      <recent name="C:\Users\adity\Projects\reviewms" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="CompanymsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="companyms" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.companyms.CompanymsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="configserver" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.configserver.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstjobappApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="firstjobapp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.firstjobapp.FirstjobappApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JobmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="jobms" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.jobms.JobmsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReviewmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="reviewms" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.reviewms.ReviewmsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceRegApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="service-reg" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project.service_reg.ServiceRegApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="53aa5200-5db3-457d-8d93-8b08f2504954" name="Changes" comment="" />
+      <created>1752928023303</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752928023303</updated>
+      <workItem from="1752928024846" duration="2106000" />
+    </task>
+    <task id="LOCAL-00001" summary="Deletion">
+      <option name="closed" value="true" />
+      <created>1752929000727</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752929000727</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Deletion">
+      <option name="closed" value="true" />
+      <created>1752929045166</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1752929045166</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Company Microservice">
+      <option name="closed" value="true" />
+      <created>1752930116638</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1752930116638</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Delete jobms/jobms directory" />
+    <MESSAGE value="Deletion" />
+    <MESSAGE value="Company Microservice" />
+    <option name="LAST_COMMIT_MESSAGE" value="Company Microservice" />
+  </component>
+</project>
