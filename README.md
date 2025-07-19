@@ -22,6 +22,7 @@ A **feature-rich**, backend-intensive microservice platform to manage **Jobs**, 
 - **Containerization**: Docker images + Docker Compose blueprint
 
 ## 📦 Microservices Architecture
+- ![Architecture Diagram](docs/images/architecture.svg)
 
 ## 📋 API Endpoints
 
@@ -48,15 +49,23 @@ A **feature-rich**, backend-intensive microservice platform to manage **Jobs**, 
 
 ## ⚙️ Configuration & Environment
 
-| Component       | Property                      | Example                         |
-| --------------- | ----------------------------- | ------------------------------- |
-| **Config Repo** | `application-dev.yml`         | YAML files per environment      |
-| **DataSource**  | `spring.datasource.url`       | `jdbc:mysql://mysql:3306/jobdb` |
-| **RabbitMQ**    | `spring.rabbitmq.host`        | `rabbitmq`                      |
-| **Zipkin**      | `spring.zipkin.base-url`      | `http://zipkin:9411/`           |
-| **Feign**       | `feign.client.config.default` | timeout, retry configs          |
+| Component       | Property                       | Example                         |
+| --------------- | ------------------------------ | ------------------------------- |
+| **Config Repo** | `application-config.properites`| YAML files per environment      |
+| **DataSource**  | `spring.datasource.url`        | `jdbc:mysql://mysql:3306/jobdb` |
+| **RabbitMQ**    | `spring.rabbitmq.host`         | `rabbitmq`                      |
+| **Zipkin**      | `spring.zipkin.base-url`       | `http://zipkin:9411/`           |
+| **Feign**       | `feign.client.config.default`  | timeout, retry configs          |
 
-> **TODO:** Fill in detailed `docker-compose.yml` and environment variable values.
+
+### Local Development
+
+```bash
+# Clone repo
+git clone https://github.com/Aditya4114/Job-Application_Backend
+cd Job-Application_Backend
+```
+
 
 ## 🛠️ Getting Started
 
@@ -68,11 +77,11 @@ A **feature-rich**, backend-intensive microservice platform to manage **Jobs**, 
 - RabbitMQ
 - MySQL
 
-### Local Development
+### Local Development (needs docker for zipkin and rabbitmq)
 
 ```bash
 # Clone repo
-git clone https://github.com/your-org/job-management-app.git
+git clone https://github.com/Aditya4114/Job-Application_Backend.git
 cd job-management-app
 
 # Start Config & Eureka
@@ -84,10 +93,14 @@ mvn -pl eureka-server spring-boot:run
 mvn spring-boot:run -Dspring-boot.run.profiles=dev -pl jobms,companyms,reviewms,gateway
 ```
 
+### DockerHub Images
+- Username: Adi4114
+
 ### Dockerized Deployment
 
 ```bash
 # Pull and start all services
+docker pull <image-name>:<tag>
 docker-compose up -d
 
 # Verify
@@ -127,4 +140,3 @@ When a review is created/updated, `reviewms` publishes an event to recalculate t
 3. Commit: `git commit -m "Add XYZ feature"`
 4. Push: `git push origin feat/XYZ`
 5. Open a PR and request review
-
