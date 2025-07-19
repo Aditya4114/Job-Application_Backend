@@ -22,7 +22,7 @@ A **feature-rich**, backend-intensive microservice platform to manage **Jobs**, 
 - **Containerization**: Docker images + Docker Compose blueprint
 
 ## 📦 Microservices Architecture
-- ![Architecture Diagram](docs/images/architecture.svg)
+- ![Architecture Diagram](docs/images/architechture.svg)
 
 ## 📋 API Endpoints
 
